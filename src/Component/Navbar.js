@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Cart from "./Cart";
 
 function Navbar() {
 
@@ -7,7 +8,11 @@ function Navbar() {
       <nav id="navbar">
 
             <NavLink to= '/'>
-                <div id="logo">Waytivities</div>
+            
+                <div id="logo">
+                    <img id="logo-img" src={"https://waytivities.com/wp-content/uploads/2024/02/cropped-logo23.png"} alt="waytivities" />        
+                    <p>WAYTIVITIES</p>
+                </div>
             </NavLink>
 
             <div id= "nav-center">
@@ -29,6 +34,20 @@ function Navbar() {
                 <NavLink to= '/SignUp' >
                     <button>Sign Up</button>
                 </NavLink>
+
+                <div id="Shopping-cart">
+                    <div id="price">
+                        <p>Shopping Cart:</p>
+                        <p>N20,000</p>
+                    </div>
+
+                    <div id="cart-icon">
+                        <Cart/>
+                        <div id="cart-items">4</div>
+                    </div>
+                    
+                </div>
+                
             </div>
       </nav>
     );
