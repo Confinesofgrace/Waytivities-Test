@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Search from "./Search";
+import Cart from "./Cart";
 //import Cart from "./Cart";
 
 /*  <div id="Shopping-cart">
@@ -34,7 +35,8 @@ function Navbar() {
             <div id="nav-center">
                 <ul>
                     <li> <NavLink to= '/'><p>Home</p></NavLink> </li>
-                    <li> <NavLink to= '/books'><p>Resources</p></NavLink></li>    
+                    <li> <NavLink to= '/books'><p>Books</p></NavLink></li>    
+                    <li> <NavLink to= '/books'><p>Other Resources</p></NavLink></li> 
                     <li><p>About Us</p></li>    
                 </ul>
 
@@ -49,6 +51,8 @@ function Navbar() {
                 <NavLink to= '/SignUp' >
                     <button>Sign Up</button>
                 </NavLink>
+
+                <Cart/>
             </div>
       </nav>
     );

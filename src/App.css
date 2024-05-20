@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Navbar Design*/
+                  /* Navbar Design*/
 
 #navbar
 {
@@ -27,16 +27,17 @@
 
 }
 
-
+                  /*Left column*/
 #nav-left
 {
-  /*background-color: blue;*/
+  /*background-color: blue; */
 }
 
 #logo
 {
    
   display: flex;
+  align-items: center;
  
 }
 
@@ -54,6 +55,8 @@
   color: black;
 }
 
+
+              /*Center column*/
 #nav-center
 {
   width: 50%;
@@ -75,6 +78,53 @@
 #nav-center li
 {
   margin-right: 30px;
+}
+
+                /*Right column*/
+
+#nav-right
+{
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: yellow;
+}
+
+
+#cart
+{
+
+  font-size: 12px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+#cart-items
+{
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  background-color: #6d2488;
+
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  color: whitesmoke;
+  font-size: 12px;
 }
 
 button
@@ -99,51 +149,6 @@ button
 
   overflow: hidden;
 }
-
-#nav-right
-{
-  width: 200px;
-  display: flex;
-  justify-content: space-between;
-}
-
-/*
-#Shopping-cart
-{
-
-  font-size: 12px;
-
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-
-#cart-items
-{
-  width: 12px;
-  height: 12px;
-  border-radius: 10px;
-  background-color: black;
-
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-
-  color: whitesmoke;
-  font-size: 12px;
-}
-
-*/
-
 
 /* Button Animation */
 button:hover,
@@ -181,7 +186,7 @@ button:active::before
 }
 
 
-    /* Search Component */
+            /* Search Component */
 
 #search
 {
@@ -203,7 +208,7 @@ button:active::before
 }
 
 
-/* Section A- Hero */
+            /* Section A- Hero */
 
 #hero
 {
