@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Search from "./Search";
 import Cart from "./Cart";
+import Hamburger from "./Hamburger";
 //import Cart from "./Cart";
 
 /*  <div id="Shopping-cart">
@@ -40,7 +41,12 @@ function Navbar() {
                     <li><p>About Us</p></li>    
                 </ul>
 
-                <Search/>
+                <div id="nav-search">
+                    <Search/>
+                </div>
+                
+
+                
             </div>
             
             <div id="nav-right">
@@ -53,7 +59,11 @@ function Navbar() {
                 </NavLink>
 
                 <Cart/>
+
+                <Hamburger/>
             </div>
+
+            
       </nav>
     );
 }
